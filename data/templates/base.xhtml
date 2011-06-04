@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>{% block title %}{% end %}</title>
+<style type="text/css">
+li {
+    list-style: none;
+    margin-left: -36px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #474747;
+    background: repeat-x #ffffff;
+    padding: 0;
+}
+
+#messages {
+}
+
+#messages li.message {
+    color: red;
+}
+
+#header {
+}
+
+#content {
+}
+
+#bottom {
+}
+</style>
+</head>
+<body>
+<div id="header">
+    {% block header %}{% end %}
+</div>
+<div id="messages">
+    {% block messages %}
+    <ul>
+        {% for msg in message %}
+        <li class="message">{{ msg }}</li>
+        {% end %}
+    </ul>
+    {% end %}
+</div>
+<div id="content">
+    {% block body %}{% end %}
+</div>
+<div id="bottom">
+    {% block bottom %}{% end %}
+</div>
+</body>
+</html>

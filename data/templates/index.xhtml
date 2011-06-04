@@ -1,0 +1,27 @@
+{% extends "base.xhtml" %}
+{% block title %}{{ escape(handler.settings["game_title"]) }}{% end %}
+{% block header %}<h1><a href="/">{{ escape(handler.settings["game_title"]) }}</a></h1>{% end %}
+{% block messages|message %}{% end %}
+{% block body %}
+<p>{{ _("Users online") }} : {{ users_count }}</p>
+{% if username  %}
+{{ _("Hello") }} <a href="/profile/{{ username}}">{{ username }}</a>! <a href="/logout">{{ _("Logout") }}</a><br/><a href="/game/connect">World Of Death</a>
+{% else %}
+<form action="/" method="post">
+<p>{{ _("Login") }}:</p>
+<p><input type="text" name="username"></p>
+<p>{{ _("Password") }}:</p>
+<p><input type="password" name="password"></p>
+{{ xsrf_form_html() }}
+<input type="submit" value="{{ _(" Log In") }}">
+</form><br/>
+<a href="/register">{{ _("Registration") }}</a>
+{% end %}
+<ul>
+<li><a href="/online">{{ _("Who online") }}</a></li>
+<li><a href="/about">{{ _("About") }}</a></li>
+<li><a href="/contacts">{{ _("Contacts") }}</a></li>
+<li><a href="/rules">{{ _("Rules") }}</a></li>
+</li>
+{% end %}
+{% block bottom %}created by d1ffuz0r{% end %}

@@ -1,0 +1,8 @@
+{% extends "base.xhtml" %}
+{% block title %} {{ _("View profile") }} {% end %}
+{% block header %}<h1><a href="/">{{ escape(handler.settings["game_title"]) }}</a></h1>{% end %}
+{% block messages|message %}{% end %}
+{% block body %}
+{{ profile }}
+{% end %}
+{% block bottom %}created by d1ffuz0r{% end %}

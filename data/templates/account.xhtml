@@ -1,0 +1,10 @@
+{% extends "base.xhtml" %}
+{% block title %} {{ _("Manage account") }}| {{ username }} {% end %}
+{% block header %}<h1><a href="/">{{ escape(handler.settings["game_title"]) }}</a></h1><h2>{{ _("Hello") }} <a href="/profile/{{ username }}">{{ username }}</a>!</h2>{% end %}
+{% block messages|message %}{% end %}
+{% block body %}
+
+<!--<a href="/game/connect/settings/">{{ _("Settings") }}</a>-->
+<a href="/game">{{ _("In game") }}</a>
+{% end %}
+{% block bottom %}created by d1ffuz0r{% end %}
