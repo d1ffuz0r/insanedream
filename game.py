@@ -39,7 +39,7 @@ class Index(BaseHandler):
         elif not password:
             self.msg.append('enter password')
         else:
-            if _db.user_exists(username):
+            if _db.check_login(username,password):
                 uname = _db.get_user(username)
                 self.set_secure_cookie("username", uname['username'])
                 #log.access('user logged in(username: %s, ip:%s)' % (uname['username'], self.request.remote_ip))

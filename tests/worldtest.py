@@ -11,7 +11,7 @@ class Test(unittest.TestCase):
     def testLoadWorld(self):
         world = World()
         world.add('players', 'ololo')
-        print world.who_online()
         print world.get('locations')
+        self.assertEqual(['ololo'],world.who_online())
 if __name__ == "__main__":
     unittest.main()
