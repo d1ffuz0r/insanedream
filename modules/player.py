@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from modules.database import DB
 
-__author__ = 'd1ffuz0r'
 class Player(object):
+    
     def __init__(self,username):
         self.player = {}
         self.load(username)
@@ -17,11 +17,8 @@ class Player(object):
     def set_param(self,name,value):
         self.player[name] = value
 
+    def get_param(self,name):
+        return self.player[name]
+
     def save(self):
         pass
-
-    
-
-
-
-  

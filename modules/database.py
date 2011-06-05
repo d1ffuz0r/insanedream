@@ -25,7 +25,7 @@ class DB(object):
         return self.db.get("SELECT username FROM accounts WHERE username = %s LIMIT 1", username)
 
     def get_player(self, player_name):
-        return self.db.get('SELECT name FROM players WHERE name = %s', player_name)
+        return self.db.get('SELECT * FROM players WHERE name = %s', player_name)
 
     def get_players(self,user):
         self.id = self.db.get('SELECT account_id FROM accounts WHERE username = %s', user)

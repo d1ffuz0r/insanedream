@@ -21,7 +21,8 @@ class World(object):
             return eval(self.world[layer])
     
     def clear(self):
-        self.world.clear()
+        if self.world.clear():
+            return True
 
     def reset(self):
         self.world = {
@@ -35,14 +36,17 @@ class World(object):
                 return False
             else:
                 self.world[name].append(param)
-            return True
-        return False
+                return True
     
     def delete(self, name, param):
         if name in self.names:
-            self.world[name].remove(param)
-            return True
-        return False    
+            if param in self.world[name]:
+                self.world[name].remove(param)
+                return True
+            else:
+                return False
+        else:
+            return False
 
     def load(self):
         syst = system.System()
@@ -53,4 +57,5 @@ class World(object):
     #@todo: build save world
     
     def who_online(self):
-        return self.world['players']
+        if self.world['players']:
+            return True

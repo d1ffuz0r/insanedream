@@ -1,17 +1,25 @@
-# -*- coding: utf-8 -*-
-__author__ = 'd1ffuz0r'
+'''
+Created on 03.06.2011
 
+@author: d1ffuz0r
+'''
 import unittest
 from modules.player import Player
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        p = Player('punkNdead')
-        print p.get()
-        p.set_param('lager','1')
-        print p.get()
-        if int(p.get()['lager']) == 1:
-            print 'player is blood'
+player = Player('punkNdead')
+
+class MyPlayerTest(unittest.TestCase):
+    
+    def test_loadPlayer(self):
+        self.assertIsNotNone(player.get())
+
+    def test_setParam(self):
+        self.assertIsNone(player.get_param('lager'))
+        player.set_param('lager',1)
+        self.assertEqual(player.get_param('lager'),1)
+
+    def test_savePlayer(self):
+        pass #@todo build
 
 if __name__ == '__main__':
     unittest.main()
