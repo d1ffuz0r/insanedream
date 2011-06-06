@@ -12,7 +12,7 @@ db = DB()
 class MyDatabaseTest(unittest.TestCase):
 
     def test_getPlayer(self):
-        self.assertDictEqual(dict(name=u'punkNdead'),db.get_player('punkNdead'))
+        self.assertIsNotNone(db.get_player('punkNdead'))
         
     def test_getPlayers(self):
         print db.get_players('root')

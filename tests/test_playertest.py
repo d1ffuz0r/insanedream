@@ -9,14 +9,13 @@ from modules.player import Player
 player = Player('punkNdead')
 
 class MyPlayerTest(unittest.TestCase):
-    
     def test_loadPlayer(self):
         self.assertIsNotNone(player.get())
 
     def test_setParam(self):
         self.assertIsNone(player.get_param('lager'))
-        player.set_param('lager',1)
-        self.assertEqual(player.get_param('lager'),1)
+        player.set_param('lager', 1)
+        self.assertEqual(player.get_param('lager'), 1)
 
     def test_savePlayer(self):
         pass #@todo build

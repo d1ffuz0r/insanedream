@@ -57,5 +57,4 @@ class World(object):
     #@todo: build save world
     
     def who_online(self):
-        if self.world['players']:
-            return True
+        return self.world['players']

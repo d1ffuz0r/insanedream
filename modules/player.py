@@ -20,5 +20,3 @@ class Player(object):
     def get_param(self,name):
         return self.player[name]
 
-    def save(self):
-        pass

@@ -83,7 +83,7 @@ class Registration(BaseHandler):
                     self.set_secure_cookie("username", username)
                     self.redirect('/')
         self.async_callback(self._on_render())
-        
+
     def _on_render(self):
         self.render('register.xhtml', message=self.msg, username=self.user)
 
@@ -120,7 +120,7 @@ class Contacts(BaseHandler):
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
-    
+
     def _on_render(self):
         self.render('contacts.xhtml', message=self.msg)
 
