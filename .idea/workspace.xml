@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4f75f4-07c1-425a-9f50-8abf757be423" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\insanedream\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\insanedream\.idea\worldofdeath.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/templates/game.html" afterPath="$PROJECT_DIR$/data/templates/game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/templates/index.xhtml" afterPath="$PROJECT_DIR$/data/templates/index.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/system.py" afterPath="$PROJECT_DIR$/modules/system.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/database.py" afterPath="$PROJECT_DIR$/modules/database.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/player.py" afterPath="$PROJECT_DIR$/modules/player.py" />
     </list>
     <ignored path="worldofdeath.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +37,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="285" column="34" selection-start="9853" selection-end="9853" vertical-scroll-proportion="0.2694215">
+            <state line="272" column="48" selection-start="9423" selection-end="9423" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="33" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/database.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="20" selection-start="2140" selection-end="2140" vertical-scroll-proportion="1.4274809">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="system.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/system.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,16 +85,25 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
+            <state line="17" column="9" selection-start="656" selection-end="656" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/player.py">
+      <file leaf-file-name="contacts.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="527" selection-end="569" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.230769">
               <folding />
             </state>
           </provider>
@@ -71,15 +113,6 @@
         <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="61" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/tests/test_dbtest.py" />
         <option value="$PROJECT_DIR$/data/blankworld.json" />
         <option value="$PROJECT_DIR$/modules/actions.py" />
         <option value="$PROJECT_DIR$/tests/test_locations.py" />
@@ -119,13 +151,14 @@
         <option value="$PROJECT_DIR$/tests/test_worldtest.py" />
         <option value="$PROJECT_DIR$/data/templates/game.xhtml" />
         <option value="D:/progr/python/python27/Lib/site-packages/MySQLdb/connections.py" />
-        <option value="$PROJECT_DIR$/modules/database.py" />
         <option value="$PROJECT_DIR$/modules/system.py" />
         <option value="$PROJECT_DIR$/tests/test_playertest.py" />
-        <option value="$PROJECT_DIR$/modules/player.py" />
         <option value="$PROJECT_DIR$/modules/world.py" />
-        <option value="$PROJECT_DIR$/data/templates/game.html" />
+        <option value="$PROJECT_DIR$/data/templates/index.xhtml" />
         <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/modules/player.py" />
+        <option value="$PROJECT_DIR$/data/templates/game.html" />
+        <option value="$PROJECT_DIR$/modules/database.py" />
       </list>
     </option>
   </component>
@@ -161,55 +194,42 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="true" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType ProjectPane="true" />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -219,11 +239,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -233,11 +253,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="worldofdeath" />
+              <option name="myItemId" value="insanedream" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,7 +272,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,68 +282,28 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="options.lastSelected" value="com.jetbrains.python.buildout.BuildoutConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="159" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="171" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="166" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="160" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\worldofdeath\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.worldofdeath">
-    <configuration default="false" name="Unittests in MyPlayerTest" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="worldofdeath" />
-      <option name="SCRIPT_NAME" value="test_playertest.py" />
-      <option name="CLASS_NAME" value="MyPlayerTest" />
-      <option name="METHOD_NAME" value="test_setParam" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="PUREUNITTEST" value="true" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in MyDatabaseTest" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="worldofdeath" />
-      <option name="SCRIPT_NAME" value="test_dbtest.py" />
-      <option name="CLASS_NAME" value="MyDatabaseTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="PUREUNITTEST" value="true" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.insanedream">
     <configuration default="true" type="PythonUnitTestConfigurationType" factoryName="Python's unittest">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -332,7 +311,7 @@
       <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="worldofdeath" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/playertest.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -351,7 +330,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="worldofdeath" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
@@ -372,7 +351,7 @@
       <option name="PATTERN" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="worldofdeath" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="insanedream" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -381,7 +360,7 @@
       <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="worldofdeath" />
+      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
@@ -390,32 +369,8 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in MyWorldTest" type="PythonUnitTestConfigurationType" factoryName="Python's unittest">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="worldofdeath" />
-      <option name="SCRIPT_NAME" value="test_worldtest.py" />
-      <option name="CLASS_NAME" value="MyWorldTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="PUREUNITTEST" value="true" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python's unittest.Unittests in MyPlayerTest" />
-      <item index="1" class="java.lang.String" itemvalue="Python's unittest.Unittests in MyDatabaseTest" />
-      <item index="2" class="java.lang.String" itemvalue="Python.worldofdeath" />
-      <item index="3" class="java.lang.String" itemvalue="Python's unittest.Unittests in MyWorldTest" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.insanedream" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -476,18 +431,18 @@
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.20684524" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="11" y="349" width="1344" height="99" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.0" sideWeight="0.0" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.15401785" sideWeight="0.72611463" order="3" side_tool="false" content_ui="combo" x="581" y="95" width="202" height="630" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.22916667" sideWeight="0.72611463" order="5" side_tool="false" content_ui="combo" x="581" y="95" width="202" height="630" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.471519" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33544305" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26433122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33544305" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2642405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.7133758" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -517,7 +472,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="append move on world" />
+    <option name="LAST_COMMIT_MESSAGE" value="project be renamed to &quot;Insane dream&quot;(c)Deffoldi" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -534,6 +489,7 @@
     <MESSAGE value="rebuild unittest for player and world" />
     <MESSAGE value="rename unittest for support pycharm 1.5" />
     <MESSAGE value="append move on world" />
+    <MESSAGE value="project be renamed to &quot;Insane dream&quot;(c)Deffoldi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -564,33 +520,9 @@
         <state line="36" column="3" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="374" selection-end="374" vertical-scroll-proportion="0.69211197" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="285" column="34" selection-start="9853" selection-end="9853" vertical-scroll-proportion="0.2694215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/world.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="17" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="527" selection-end="569" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
@@ -598,9 +530,53 @@
         <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="33" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="656" selection-end="656" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="272" column="48" selection-start="9423" selection-end="9423" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" />
+        <state line="49" column="20" selection-start="2140" selection-end="2140" vertical-scroll-proportion="1.4274809">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

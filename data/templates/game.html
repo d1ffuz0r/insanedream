@@ -1,6 +1,6 @@
 {% extends "base.xhtml" %}
 {% block title %}{{ escape(handler.settings["game_title"]) }} | {{ location['name'] }}{% end %}
-{% block header %}{{ life }}/{{ life_max }} | {{ mana }}/{{ mana_max }}{% end %}
+{% block header %}<a href="?action=save">[Save]</a><br/>{{ life }}/{{ life_max }} | {{ mana }}/{{ mana_max }}{% end %}
 {% block messages|message %}{% end %}
 {% block body %}
 <hr width="100" align="left">

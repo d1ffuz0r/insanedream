@@ -12,7 +12,11 @@ class Player(object):
     def load(self,username):
         db = DB()
         self.player = db.get_player(username)
-        
+
+    def save(self,username):
+        db = DB()
+        db.save_player(self.get(),username)
+
     def set_param(self,name,value):
         self.player[name] = value
 

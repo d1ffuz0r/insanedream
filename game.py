@@ -236,12 +236,16 @@ class Game(BaseHandler):
     def get(self):
         path = self.get_argument('go',None)
         target = self.get_argument('target',None)
+        action = self.get_argument('action',None)
         self.msg.append(_player.get_param('journal'))
         if path:
             self.go(path)
         if target:
             if target in _world.get_in_lock(_player.get_param('location')):
                 self.async_callback(self._on_actions(target))
+        if action:
+            if action=='save':
+                self.async_callback(self._on_save())
         self.async_callback(self._on_render())
 
     def post(self):
@@ -264,6 +268,10 @@ class Game(BaseHandler):
     def _on_actions(self,target):
         self.write('actions for %s' % target)
         self.finish()
+
+    def _on_save(self):
+        _player.save(self.get_current_account())
+        self.msg.append('your charakter be saved')
 
 class GameServer(tornado.web.Application):
     def __init__(self):

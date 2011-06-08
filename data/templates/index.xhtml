@@ -5,7 +5,7 @@
 {% block body %}
 <p>{{ _("Users online") }} : {{ users_count }}</p>
 {% if username  %}
-{{ _("Hello") }} <a href="/profile/{{ username}}">{{ username }}</a>! <a href="/logout">{{ _("Logout") }}</a><br/><a href="/game/connect">World Of Death</a>
+{{ _("Hello") }} <a href="/profile/{{ username}}">{{ username }}</a>! <a href="/logout">{{ _("Logout") }}</a><br/><a href="/game/connect">{{ escape(handler.settings["game_title"]) }}</a>
 {% else %}
 <form action="/" method="post">
 <p>{{ _("Login") }}:</p>
@@ -13,7 +13,7 @@
 <p>{{ _("Password") }}:</p>
 <p><input type="password" name="password"></p>
 {{ xsrf_form_html() }}
-<input type="submit" value="{{ _(" Log In") }}">
+<input type="submit" value="{{ _("Log In") }}">
 </form><br/>
 <a href="/register">{{ _("Registration") }}</a>
 {% end %}
