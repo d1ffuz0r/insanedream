@@ -5,7 +5,7 @@ class System(object):
         pass
     
     def get_json(self, fname):
-        f = file('D:/worldofdeath/data/%s.json' % fname, 'r')
+        f = file('D:/insanedream/data/%s.json' % fname, 'r')
         return eval(f.read())
         f.close()
 

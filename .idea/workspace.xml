@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4f75f4-07c1-425a-9f50-8abf757be423" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/locations.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/templates/game.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/actions.py" />
-      <change type="DELETED" beforePath="D:\worldofdeath\data\templates\game.xhtml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blankworld.json" afterPath="$PROJECT_DIR$/data/blankworld.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/database.py" afterPath="$PROJECT_DIR$/modules/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/player.py" afterPath="$PROJECT_DIR$/modules/player.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/system.py" afterPath="$PROJECT_DIR$/modules/system.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/world.py" afterPath="$PROJECT_DIR$/modules/world.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_playertest.py" afterPath="$PROJECT_DIR$/tests/test_playertest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_worldtest.py" afterPath="$PROJECT_DIR$/tests/test_worldtest.py" />
     </list>
     <ignored path="worldofdeath.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,19 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="251" column="64" selection-start="8636" selection-end="8636" vertical-scroll-proportion="0.0">
+            <state line="285" column="34" selection-start="9853" selection-end="9853" vertical-scroll-proportion="0.2694215">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="world.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="17" selection-start="1338" selection-end="1338" vertical-scroll-proportion="2.552163">
+            <state line="59" column="17" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -62,7 +52,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="-9.807693">
+            <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,9 +102,9 @@
     <option name="UPDATE_CHANGES_POLICY" value="STASH" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/game.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/data/templates/accounts.xhtml" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/modules/world.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/game.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/modules/player.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -279,15 +269,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="159" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="171" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="166" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -480,7 +470,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.29588607" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.20684524" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="11" y="349" width="1344" height="99" />
@@ -488,7 +478,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.15401785" sideWeight="0.72611463" order="3" side_tool="false" content_ui="combo" x="581" y="95" width="202" height="630" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.471519" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33544305" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33544305" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26433122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -527,7 +517,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename unittest for support pycharm 1.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="append move on world" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -543,6 +533,7 @@
     <MESSAGE value="add unittest for database.py,&#10;fix login" />
     <MESSAGE value="rebuild unittest for player and world" />
     <MESSAGE value="rename unittest for support pycharm 1.5" />
+    <MESSAGE value="append move on world" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -573,51 +564,43 @@
         <state line="36" column="3" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/database.py">
+    <entry file="file://$PROJECT_DIR$/modules/system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="61" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="527" selection-end="569" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="24" selection-start="374" selection-end="374" vertical-scroll-proportion="0.69211197" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="64" selection-start="8636" selection-end="8636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="374" selection-end="374" vertical-scroll-proportion="0.69211197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="-9.807693">
+        <state line="285" column="34" selection-start="9853" selection-end="9853" vertical-scroll-proportion="0.2694215">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="17" selection-start="1338" selection-end="1338" vertical-scroll-proportion="2.552163">
+        <state line="59" column="17" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="527" selection-end="569" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="61" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>

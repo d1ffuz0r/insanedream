@@ -283,7 +283,7 @@ class GameServer(tornado.web.Application):
             
         ]
         settings = {
-            'game_title': u'World of Death',
+            'game_title': 'Insane Dream',
             'template_path': os.path.join(os.path.dirname(__file__), "data/templates"),
             'static_path': os.path.join(os.path.dirname(__file__), "data/static"),
             'xsrf_cookies': True,
