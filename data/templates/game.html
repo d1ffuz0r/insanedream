@@ -1,16 +1,16 @@
 {% extends "base.xhtml" %}
 {% block title %}{{ escape(handler.settings["game_title"]) }} | {{ location['name'] }}{% end %}
-{% block header %}<a href="?action=save">[Save]</a><br/>{{ life }}/{{ life_max }} | {{ mana }}/{{ mana_max }}{% end %}
+{% block header %}<a href="?action=save">[Save]</a><a href="?action=profile">[Profile]|<a href="?action=logout">[Logout]</a><br/>{% end %}
 {% block messages|message %}{% end %}
 {% block body %}
 <hr width="100" align="left">
 {% if stmp %}
-{% for name in stmp %}
-    {% if name['name'] != player %}
-        <p><a href="?target={{ name['name'] }}">{{ name['name'] }}</a></p>
-    {% end%}
-{% end %}
-{% end %}
+    {% for name in stmp %}
+
+            <p><a href="?target={{ name['name'] }}">{{ name['name'] }}</a></p>
+
+    {% end %}
+    {% end %}
 <hr width="100" align="left">
 {% for exit,name in location['exits'].items() %}
     <p><a href="?go={{ exit }}">{{ name }}</a></p>

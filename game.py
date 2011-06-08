@@ -233,6 +233,14 @@ class Game(BaseHandler):
             return False
         del c_loc,n_loc
 
+    def to_offline(self,account):
+            if _player.get_param('war') !='':
+                return False
+            else:
+                _player.save(self.get_current_account())
+                _world.to_offline(account)
+                return True
+
     def get(self):
         path = self.get_argument('go',None)
         target = self.get_argument('target',None)
@@ -246,6 +254,11 @@ class Game(BaseHandler):
         if action:
             if action=='save':
                 self.async_callback(self._on_save())
+            if action=='profile':
+                self.async_callback(self._on_profile())
+            if action=='logout':
+                self.async_callback(self._on_logout())
+
         self.async_callback(self._on_render())
 
     def post(self):
@@ -258,13 +271,18 @@ class Game(BaseHandler):
                     message = self.msg,
                     player = self.get_current_account(),
                     location = location,
-                    stmp = stmp,
-                    life = _player.get_param('life'),
-                    life_max = _player.get_param('life_max'),
-                    mana = _player.get_param('mana'),
-                    mana_max = _player.get_param('mana_max')
+                    stmp = stmp
+                    #life = _player.get_param('life'),
+                    #life_max = _player.get_param('life_max'),
+                    #mana = _player.get_param('mana'),
+                    #mana_max = _player.get_param('mana_max')
                     )
 
+    def _on_profile(self):
+        for name,val in _player.get().items():
+            self.write('%s : %s<br/>' % (name,val))
+        self.finish()
+        
     def _on_actions(self,target):
         self.write('actions for %s' % target)
         self.finish()
@@ -272,6 +290,14 @@ class Game(BaseHandler):
     def _on_save(self):
         _player.save(self.get_current_account())
         self.msg.append('your charakter be saved')
+
+    def _on_logout(self):
+        account = _player.get()
+        if self.to_offline(account):
+            self.write('your char is saved, bye. <a href="/">Index page</a>')
+        else:
+            self.msg.append('error logout. you in fight')
+        self.finish()
 
 class GameServer(tornado.web.Application):
     def __init__(self):

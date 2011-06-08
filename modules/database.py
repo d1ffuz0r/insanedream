@@ -44,35 +44,8 @@ class DB(object):
         if self.db.execute('DELETE FROM players WHERE name = %s and account_id = %s', player_name, int(account_id)):
             return True
     def save_player(self, data, player_name):
-        for j,t in data.items():
-            print j,':',type(t)
-        self.db.execute('UPDATE players SET \
-        guild="'+str(data['guild'])+'" WHERE name = %s',player_name)
-        '''
-        guild_status="'+int(data['guild_status'])+'", \
-                lager="'+int(data['lager'])+'", \
-                location="'+str(data['location'])+'",\
-                ghost="'+int(data['ghost'])+'", \
-                journal="'+list(data['journal'])+'", \
-                magic="'+list(data['magic'])+'", \
-                messages="'+list(data['messages'])+'", \
-                life="'+int(data['life'])+'", \
-                life_max="'+int(data['life_max'])+'", \
-                mana="'+int(data['mana'])+'", \
-                mana_max="'+int(data['mana_max'])+'", \
-                time_regenerate="'+int(data['time_regenerate'])+'", \
-                time_speed="'+int(data['time_speed'])+'", \
-                war="'+list(data['war'])+'", \
-                pd="'+str(data['pd'])+'", \
-                st="'+str(data['st'])+'", \
-                p_m="'+str(data['p_m'])+'", \
-                items="'+data['items']+'", \
-                equip="'+data['equip']+'", \
-                deystvo="'+str(data['deystvo'])+'", \
-                status="'+int(data['status'])+'", \
-                t_go="'+int(data['t_go'])
-
-        '''
+        self.db.execute('UPDATE players SET guild=%s, guild_status=%s, lager=%s, location=%s, ghost=%s, journal=%s, magic=%s, messages=%s, life=%s, life_max=%s, mana=%s, mana_max=%s, time_regenerate=%s, time_speed=%s, war=%s, pd=%s, st=%s, p_m=%s, items=%s, equip=%s, deystvo=%s, status=%s, t_go=%s  WHERE name = %s',data['guild'],data['guild_status'],data['lager'],data['location'],data['ghost'],data['journal'],data['magic'],data['messages'],int(data['life']),int(data['life_max']),int(data['mana']),int(data['mana_max']),data['time_regenerate'],data['time_speed'],data['war'],data['pd'],data['st'],data['p_m'],data['items'],data['equip'],data['deystvo'],data['status'],data['t_go'],player_name)
+        
     def player_exists(self,player_name):
         if self.db.get('SELECT name FROM players WHERE name = %s', player_name):
             return True

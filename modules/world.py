@@ -83,4 +83,9 @@ class World(object):
             self.online.append(name)
 
     def online_delete(self,name):
-        self.online.remove(name)
+        del self.online[syst.num_item(self.online,name)]
+
+    def to_offline(self,account):
+        if account in self.get_in_lock(account['location']):
+            del self.world[account['location']][syst.num_item(self.get_in_lock(account['location']),account)]
+            self.online_delete(account['name'])
