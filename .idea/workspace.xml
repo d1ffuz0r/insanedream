@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4f75f4-07c1-425a-9f50-8abf757be423" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blankworld.json" afterPath="$PROJECT_DIR$/data/blankworld.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/templates/game.html" afterPath="$PROJECT_DIR$/data/templates/game.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/database.py" afterPath="$PROJECT_DIR$/modules/database.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/player.py" afterPath="$PROJECT_DIR$/modules/player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/world.py" afterPath="$PROJECT_DIR$/modules/world.py" />
     </list>
     <ignored path="worldofdeath.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +35,7 @@
       <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="311" column="16" selection-start="10694" selection-end="10694" vertical-scroll-proportion="0.0">
+            <state line="286" column="45" selection-start="9920" selection-end="9920" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,7 +44,7 @@
       <file leaf-file-name="world.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="47" selection-start="2388" selection-end="2388" vertical-scroll-proportion="0.740458">
+            <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.740458">
               <folding />
             </state>
           </provider>
@@ -73,7 +71,7 @@
       <file leaf-file-name="system.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+            <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +80,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="-3.9230769">
+            <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.5384617">
               <folding />
             </state>
           </provider>
@@ -148,13 +146,13 @@
         <option value="$PROJECT_DIR$/tests/test_worldtest.py" />
         <option value="$PROJECT_DIR$/data/templates/game.xhtml" />
         <option value="D:/progr/python/python27/Lib/site-packages/MySQLdb/connections.py" />
-        <option value="$PROJECT_DIR$/modules/system.py" />
         <option value="$PROJECT_DIR$/tests/test_playertest.py" />
         <option value="$PROJECT_DIR$/data/templates/index.xhtml" />
         <option value="$PROJECT_DIR$/modules/player.py" />
-        <option value="$PROJECT_DIR$/data/templates/game.html" />
-        <option value="$PROJECT_DIR$/game.py" />
         <option value="$PROJECT_DIR$/modules/database.py" />
+        <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/modules/system.py" />
+        <option value="$PROJECT_DIR$/data/templates/game.html" />
         <option value="$PROJECT_DIR$/modules/world.py" />
       </list>
     </option>
@@ -469,7 +467,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="append function for save char" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct log in and logout players" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -488,6 +486,7 @@
     <MESSAGE value="append move on world" />
     <MESSAGE value="project be renamed to &quot;Insane dream&quot;(c)Deffoldi" />
     <MESSAGE value="append function for save char" />
+    <MESSAGE value="correct log in and logout players" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -537,23 +536,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="360" selection-end="360" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="16" selection-start="10694" selection-end="10694" vertical-scroll-proportion="0.0">
+        <state line="286" column="45" selection-start="9920" selection-end="9920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -572,9 +557,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="47" selection-start="2388" selection-end="2388" vertical-scroll-proportion="0.740458">
+        <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.740458">
           <folding />
         </state>
       </provider>

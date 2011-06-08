@@ -271,11 +271,11 @@ class Game(BaseHandler):
                     message = self.msg,
                     player = self.get_current_account(),
                     location = location,
-                    stmp = stmp
-                    #life = _player.get_param('life'),
-                    #life_max = _player.get_param('life_max'),
-                    #mana = _player.get_param('mana'),
-                    #mana_max = _player.get_param('mana_max')
+                    stmp = stmp,
+                    life = _player.get_param('life'),
+                    life_max = _player.get_param('life_max'),
+                    mana = _player.get_param('mana'),
+                    mana_max = _player.get_param('mana_max'),
                     )
 
     def _on_profile(self):
