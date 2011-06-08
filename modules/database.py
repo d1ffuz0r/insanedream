@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
-import tornado.database, hashlib
-__author__ = 'd1ffuz0r'
+import tornado.database
+import hashlib
 
 class DB(object):
     def __init__(self):
         self.db = tornado.database.Connection(host='localhost', database='wofd', user='root', password='root')
+        self.db
 
     def user_exists(self,username):
         if self.db.get("SELECT username FROM accounts WHERE username = %s", username):

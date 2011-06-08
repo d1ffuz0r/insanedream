@@ -4,17 +4,22 @@ import tornado.ioloop, tornado.web, tornado.autoreload, tornado.options
 from tornado.escape import utf8
 import os, time
 from modules import world, database
+from modules.player import Player
+from modules.world import World
+from modules.database import DB
 
 current_date = time.strftime('%d-%m-%Y')
-_world = world.World()
-_db = database.DB()
+_world = World()
+_db = DB()
+_player = Player()
+
 
 class BaseHandler(tornado.web.RequestHandler):
             
     def get_current_user(self):
         return self.get_secure_cookie('username')
     
-    def current_account(self):
+    def get_current_account(self):
         return self.get_secure_cookie('account')
     
     def initialize(self):
@@ -23,7 +28,11 @@ class BaseHandler(tornado.web.RequestHandler):
             self.user = None
         else:
             self.user = tornado.escape.xhtml_escape(self.get_current_user())
-        
+
+        if not self.get_current_account():
+            self.account = None
+        else:
+            self.account = tornado.escape.xhtml_escape(self.get_current_account())
 class Index(BaseHandler):
     
     @tornado.web.asynchronous
@@ -50,7 +59,7 @@ class Index(BaseHandler):
         self.async_callback(self._on_render())
                 
     def _on_render(self):
-        self.render('index.xhtml', message=self.msg, username=self.user, users_count=len(_world.who_online()))
+        self.render('index.xhtml', message=self.msg, username=self.user, users_count=len(_world.online_who()))
         
 class Registration(BaseHandler):
     
@@ -105,7 +114,7 @@ class WhoOnline(BaseHandler):
         self.async_callback(self._on_render())
     
     def _on_render(self):
-        self.render('online.xhtml', message=self.msg, users=_world.who_online())
+        self.render('online.xhtml', message=self.msg, users=_world.online_who())
 
 class About(BaseHandler):
     
@@ -181,8 +190,14 @@ class GameAccount(BaseHandler):
     @tornado.web.asynchronous
     def get(self, accountName):
         self.set_secure_cookie('account', accountName)
+        if accountName not in _world.online_who():
+            _player.load(accountName)
+            location = _player.get_param('location')
+            player = _player.get()
+            _world.update_loc(location, player)
         self.async_callback(self._on_render(accountName))
-        
+        _world.online_add(self.get_current_account())
+
     def _on_render(self, accountName):
         self.render('account.xhtml', message=self.msg, username=self.user, account=accountName)
 """
@@ -197,21 +212,59 @@ def _on_render(self):
 self.render('settings.xhtml', message=self.msg, username=self.user)
 """
 class Game(BaseHandler):
-    
     @tornado.web.authenticated
     @tornado.web.asynchronous
+
+    def go(self, new_loc):
+        loc = _player.get_param('location')
+        c_loc = _world.get_loc(loc)['war']
+        n_loc = _world.get_loc(new_loc)['war']
+        if new_loc in _world.get_loc(_player.get_param('location'))['exits']:
+            _player.set_param('location',new_loc)
+            if (c_loc==2) and (n_loc==1):
+                _player.set_param('journal','you in peace territory')
+            elif (c_loc==1) and (n_loc==2):
+                _player.set_param('journal','you in war territory')
+            elif c_loc==n_loc:
+                _player.set_param('journal','')
+            _world.move(_player.get(),loc,new_loc)
+            return new_loc
+        else:
+            return False
+        del c_loc,n_loc
+
     def get(self):
-        _world.add('players', self.current_account())
+        path = self.get_argument('go',None)
+        target = self.get_argument('target',None)
+        self.msg.append(_player.get_param('journal'))
+        if path:
+            self.go(path)
+        if target:
+            if target in _world.get_in_lock(_player.get_param('location')):
+                self.async_callback(self._on_actions(target))
         self.async_callback(self._on_render())
-        
+
     def post(self):
         pass
-    
+
     def _on_render(self):
-        self.write('you in game')
+        location = _world.get_loc(_player.get_param('location'))
+        stmp = _world.get_in_lock(_player.get_param('location'))
+        self.render('game.html',
+                    message = self.msg,
+                    player = self.get_current_account(),
+                    location = location,
+                    stmp = stmp,
+                    life = _player.get_param('life'),
+                    life_max = _player.get_param('life_max'),
+                    mana = _player.get_param('mana'),
+                    mana_max = _player.get_param('mana_max')
+                    )
+
+    def _on_actions(self,target):
+        self.write('actions for %s' % target)
         self.finish()
-        
-        
+
 class GameServer(tornado.web.Application):
     def __init__(self):
         handlers = routes = [
