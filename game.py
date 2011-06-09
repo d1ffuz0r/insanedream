@@ -7,7 +7,7 @@ from modules import world, database
 from modules.player import Player
 from modules.world import World
 from modules.database import DB
-
+#@todo makesound for exits in location
 current_date = time.strftime('%d-%m-%Y')
 _world = World()
 _db = DB()
@@ -60,7 +60,7 @@ class Index(BaseHandler):
                 
     def _on_render(self):
         self.render('index.xhtml', message=self.msg, username=self.user, users_count=len(_world.online_who()))
-        
+
 class Registration(BaseHandler):
     
     @tornado.web.asynchronous
@@ -102,7 +102,7 @@ class Logout(BaseHandler):
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_logout())
-        
+
     def _on_logout(self):
         self.clear_cookie('username')
         self.redirect('/')
@@ -222,11 +222,11 @@ class Game(BaseHandler):
         if new_loc in _world.get_loc(_player.get_param('location'))['exits']:
             _player.set_param('location',new_loc)
             if (c_loc==2) and (n_loc==1):
-                _player.set_param('journal','you in peace territory')
+                self.msg.append('you in peace territory')
             elif (c_loc==1) and (n_loc==2):
-                _player.set_param('journal','you in war territory')
-            elif c_loc==n_loc:
-                _player.set_param('journal','')
+                self.msg.append('you in war territory')
+            #elif c_loc==n_loc:
+            #    _player.set_param('journal','')
             _world.move(_player.get(),loc,new_loc)
             return new_loc
         else:

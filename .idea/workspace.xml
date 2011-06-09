@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff4f75f4-07c1-425a-9f50-8abf757be423" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blankworld.json" afterPath="$PROJECT_DIR$/data/blankworld.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/templates/game.html" afterPath="$PROJECT_DIR$/data/templates/game.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
     </list>
     <ignored path="worldofdeath.iws" />
@@ -32,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="game.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="286" column="45" selection-start="9920" selection-end="9920" vertical-scroll-proportion="0.0">
+            <state line="226" column="32" selection-start="7785" selection-end="7785" vertical-scroll-proportion="0.73536897">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="world.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.740458">
+            <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +78,7 @@
       <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.5384617">
+            <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,7 +87,7 @@
       <file leaf-file-name="contacts.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,7 +96,7 @@
       <file leaf-file-name="index.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.230769">
+            <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,10 +148,10 @@
         <option value="$PROJECT_DIR$/data/templates/index.xhtml" />
         <option value="$PROJECT_DIR$/modules/player.py" />
         <option value="$PROJECT_DIR$/modules/database.py" />
-        <option value="$PROJECT_DIR$/game.py" />
         <option value="$PROJECT_DIR$/modules/system.py" />
         <option value="$PROJECT_DIR$/data/templates/game.html" />
         <option value="$PROJECT_DIR$/modules/world.py" />
+        <option value="$PROJECT_DIR$/game.py" />
       </list>
     </option>
   </component>
@@ -283,15 +281,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="159" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="171" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="837" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="166" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -422,7 +420,6 @@
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.29588607" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.20684524" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="11" y="349" width="1344" height="99" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.0" sideWeight="0.0" order="6" side_tool="false" content_ui="combo" />
@@ -436,6 +433,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DatabaseBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.7133758" order="2" side_tool="false" content_ui="combo" />
@@ -467,7 +465,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct log in and logout players" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct kind player and items in location" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -487,6 +485,7 @@
     <MESSAGE value="project be renamed to &quot;Insane dream&quot;(c)Deffoldi" />
     <MESSAGE value="append function for save char" />
     <MESSAGE value="correct log in and logout players" />
+    <MESSAGE value="correct kind player and items in location" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -517,63 +516,53 @@
         <state line="36" column="3" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="8" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="286" column="45" selection-start="9920" selection-end="9920" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.740458">
+        <state line="226" column="32" selection-start="7785" selection-end="7785" vertical-scroll-proportion="0.73536897">
           <folding />
         </state>
       </provider>
