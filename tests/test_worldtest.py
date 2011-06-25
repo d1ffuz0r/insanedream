@@ -8,8 +8,6 @@ from modules.player import Player
 from modules.world import World
 
 world = World()
-player = Player('punkNdead')
-
 class MyWorldTest(unittest.TestCase):
 
     def test_getWorld(self):
@@ -28,11 +26,6 @@ class MyWorldTest(unittest.TestCase):
 
     def test_who_online(self):
         print self.assertEqual([],world.online_who())
-
-    def test_in_world(self):
-        player_loc = player.get()['location']
-        world.add(player_loc,player.get())
-
         
 '''
     def test_load_location(self):

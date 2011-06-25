@@ -1,0 +1,14 @@
+{% extends "../base.xhtml" %}
+{% block title %}{{ escape(handler.settings["game_title"]) }}{% end %}
+{% block header %}{% end %}
+{% block messages|message %}{% end %}
+{% block body %}
+<hr width="100" align="left">
+<ul>
+    <li><a href="?action=take&target={{ target }}">{{ _('Take') }}</a></li>
+    <li><a href="?action=use&target={{ target }}">{{ _('Use') }}</a></li>
+    <li><a href="?action=info&target={{ target }}">{{ _('Info') }}</a></li>
+</ul>
+<hr width="100" align="left">
+{% end %}
+{% block bottom %}{% end %}

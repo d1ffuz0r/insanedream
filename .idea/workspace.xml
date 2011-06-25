@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff4f75f4-07c1-425a-9f50-8abf757be423" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/templates/actions/item.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/templates/actions/npc.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/templates/actions/sayall.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/templates/actions/user.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/speak.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_speaktest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/blankworld.json" afterPath="$PROJECT_DIR$/data/blankworld.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/templates/game.html" afterPath="$PROJECT_DIR$/data/templates/game.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/__init__.py" afterPath="$PROJECT_DIR$/modules/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_worldtest.py" afterPath="$PROJECT_DIR$/tests/test_worldtest.py" />
     </list>
     <ignored path="worldofdeath.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,61 +43,61 @@
       <file leaf-file-name="game.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="32" selection-start="7785" selection-end="7785" vertical-scroll-proportion="0.73536897">
+            <state line="93" column="39" selection-start="3297" selection-end="3297" vertical-scroll-proportion="1.1165049">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="world.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/world.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="12" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/database.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="system.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
+      <file leaf-file-name="autoreload.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/autoreload.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/template.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="516" column="4" selection-start="16266" selection-end="16266" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="speak.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/speak.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="19" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="npc.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/actions/npc.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="18" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/actions/user.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="63" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sayall.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/actions/sayall.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -96,16 +106,16 @@
       <file leaf-file-name="index.xhtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="693" selection-end="715" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_playertest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
+      <file leaf-file-name="game.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+            <state line="2" column="184" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,21 +146,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/data/blankworld.json" />
-        <option value="$PROJECT_DIR$/modules/actions.py" />
-        <option value="$PROJECT_DIR$/tests/test_locations.py" />
-        <option value="$PROJECT_DIR$/modules/locations.py" />
-        <option value="$PROJECT_DIR$/data/locations.json" />
-        <option value="$PROJECT_DIR$/tests/test_worldtest.py" />
-        <option value="$PROJECT_DIR$/data/templates/game.xhtml" />
-        <option value="D:/progr/python/python27/Lib/site-packages/MySQLdb/connections.py" />
-        <option value="$PROJECT_DIR$/tests/test_playertest.py" />
-        <option value="$PROJECT_DIR$/data/templates/index.xhtml" />
         <option value="$PROJECT_DIR$/modules/player.py" />
         <option value="$PROJECT_DIR$/modules/database.py" />
-        <option value="$PROJECT_DIR$/modules/system.py" />
-        <option value="$PROJECT_DIR$/data/templates/game.html" />
         <option value="$PROJECT_DIR$/modules/world.py" />
+        <option value="$PROJECT_DIR$/modules/system.py" />
+        <option value="$PROJECT_DIR$/modules/__init__.py" />
+        <option value="$PROJECT_DIR$/tests/test_speaktest.py" />
+        <option value="$PROJECT_DIR$/data/blankworld.json" />
+        <option value="$PROJECT_DIR$/tests/test_worldtest.py" />
+        <option value="$PROJECT_DIR$/modules/speak.py" />
+        <option value="$PROJECT_DIR$/data/templates/actions/npc.xhtml" />
+        <option value="$PROJECT_DIR$/data/templates/actions/item.xhtml" />
+        <option value="$PROJECT_DIR$/data/templates/actions/user.xhtml" />
+        <option value="$PROJECT_DIR$/data/templates/game.html" />
+        <option value="D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/web.py" />
+        <option value="$PROJECT_DIR$/data/templates/actions/sayall.xhtml" />
         <option value="$PROJECT_DIR$/game.py" />
       </list>
     </option>
@@ -198,6 +208,7 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,6 +224,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="insanedream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insanedream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insanedream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,9 +287,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insanedream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="insanedream" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,10 +339,49 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\insanedream\data\templates\actions" />
       <recent name="D:\worldofdeath\data" />
     </key>
   </component>
   <component name="RunManager" selected="Python.insanedream">
+    <configuration default="false" name="Unittests in test_speaktest.py" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="insanedream" />
+      <option name="SCRIPT_NAME" value="test_speaktest.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="PUREUNITTEST" value="true" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in test_worldtest.py" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="insanedream" />
+      <option name="SCRIPT_NAME" value="test_worldtest.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="$PROJECT_DIR$/tests" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="PUREUNITTEST" value="true" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonUnitTestConfigurationType" factoryName="Python's unittest">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,7 +389,7 @@
       <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="" />
+      <module name="insanedream" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/playertest.py" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -323,7 +408,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="" />
+      <module name="insanedream" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <method />
@@ -335,7 +420,7 @@
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="worldofdeath" />
+      <module name="insanedream" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -353,7 +438,7 @@
       <option name="SDK_HOME" value="D:/progr/python/python27/python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
-      <module name="" />
+      <module name="insanedream" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/game.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PyDebugRunner" />
@@ -362,8 +447,10 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.insanedream" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python's unittest.Unittests in test_speaktest.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python's unittest.Unittests in test_worldtest.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python.insanedream" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -417,17 +504,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
+    <frame x="-4" y="17" width="1374" height="755" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.29588607" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.29641184" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.20684524" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" x="11" y="349" width="1344" height="99" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.0" sideWeight="0.0" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.171875" sideWeight="0.66114455" order="6" side_tool="false" content_ui="tabs" x="921" y="93" width="216" height="404" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.22916667" sideWeight="0.72611463" order="5" side_tool="false" content_ui="combo" x="581" y="95" width="202" height="630" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.471519" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33544305" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2642405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33885542" sideWeight="0.99925596" order="2" side_tool="false" content_ui="tabs" x="276" y="555" width="1344" height="166" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.26365054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296131" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -465,7 +552,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct kind player and items in location" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct append message for go  to and from war territory." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -486,61 +573,15 @@
     <MESSAGE value="append function for save char" />
     <MESSAGE value="correct log in and logout players" />
     <MESSAGE value="correct kind player and items in location" />
+    <MESSAGE value="correct append message for go  to and from war territory." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_dbtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="234" selection-end="234" vertical-scroll-proportion="0.33082706" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/blankworld.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="79" selection-end="79" vertical-scroll-proportion="0.16037735" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/locations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="153941" selection-start="153941" selection-end="153941" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_worldtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="3" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="2715" selection-end="2715" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="45" column="48" selection-start="968" selection-end="968" vertical-scroll-proportion="0.042713568" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/templates/contacts.xhtml">
@@ -548,21 +589,86 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
+    <entry file="file://$PROJECT_DIR$/data/blankworld.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_worldtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="24" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/actions/item.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="119" selection-end="119" vertical-scroll-proportion="-1.3076923" />
+      </provider>
+    </entry>
+    <entry file="file://D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/autoreload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="516" column="4" selection-start="16266" selection-end="16266" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/speak.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/actions/npc.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_playertest.py">
+    <entry file="file://$PROJECT_DIR$/data/templates/actions/user.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
+        <state line="8" column="63" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="693" selection-end="715" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="184" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/progr/python/python27/Lib/site-packages/tornado-2.0-py2.7.egg/tornado/web.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="8" selection-start="4418" selection-end="4418" vertical-scroll-proportion="0.33252427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/templates/actions/sayall.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="48" selection-start="262" selection-end="262" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="32" selection-start="7785" selection-end="7785" vertical-scroll-proportion="0.73536897">
+        <state line="93" column="39" selection-start="3297" selection-end="3297" vertical-scroll-proportion="1.1165049">
           <folding />
         </state>
       </provider>
