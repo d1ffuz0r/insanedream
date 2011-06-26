@@ -1,24 +1,24 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import os
+import time
 import tornado.ioloop
 import tornado.web
 import tornado.options
+from tornado import httpserver
 from tornado.escape import utf8
-import os
-import time
-from modules import world, database
 from modules.player import Player
 from modules.world import World
 from modules.database import DB
 from modules.speak import Speak
-from tornado import httpserver
-#@todo makesound for exits in location
-current_date = time.strftime('%d-%m-%Y')
+
 _world = World()
 _db = DB()
 _player = Player()
 _speak = Speak()
-
+'''
+@todo makesound for exits in location
+'''
 class BaseHandler(tornado.web.RequestHandler):
     def get_current_user(self):
         return self.get_secure_cookie('username')
@@ -67,7 +67,7 @@ class Index(BaseHandler):
         self.render('index.xhtml', message=self.msg, username=self.user, users_count=len(_world.online_who()))
 
 class Registration(BaseHandler):
-    
+
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
@@ -78,6 +78,7 @@ class Registration(BaseHandler):
         password = self.get_argument("password", None)
         password_repeat = self.get_argument("password_repeat", None)
         email = self.get_argument("email", None)
+        current_date = time.strftime('%d-%m-%Y')
         if not username:
             self.msg.append('enter login')
         else:
