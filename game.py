@@ -263,8 +263,9 @@ class Game(BaseHandler):
                   'profile': self._on_profile,
                   'logout': self._on_logout,
                   'sayall': self._on_sayall,
+                  'info': self._on_info,
                   'select': self.select,
-                  'go': self.go_to
+                  'go': self.go_to,
                   }
         action = self.get_argument('action',None)
         if action:
@@ -277,7 +278,7 @@ class Game(BaseHandler):
 
     def _on_render(self):
         location = _player.get_param('location')
-        self.render('game.html',
+        self.render('game.xhtml',
                     message = self.msg,
                     player = self.get_current_account(),
                     location = _world.get_loc(location),
@@ -320,6 +321,9 @@ class Game(BaseHandler):
     def _on_go(self,path):
         self.go(path)
 
+    def _on_info(self):
+        pass
+    
 class GameServer(tornado.web.Application):
     def __init__(self):
         handlers = [
