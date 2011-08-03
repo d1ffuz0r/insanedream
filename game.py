@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
-import time
+
+from modules.player import Player
+from modules.database import DB
+from tornado.escape import utf8
+from modules.world import World
+from modules.speak import Speak
+from tornado import httpserver
+import tornado.options
 import tornado.ioloop
 import tornado.web
-import tornado.options
-from tornado import httpserver
-from tornado.escape import utf8
-from modules.player import Player
-from modules.world import World
-from modules.database import DB
-from modules.speak import Speak
+import time
+import os
 
 _world = World()
 _db = DB()
@@ -37,8 +38,8 @@ class BaseHandler(tornado.web.RequestHandler):
             self.account = None
         else:
             self.account = tornado.escape.xhtml_escape(self.get_current_account())
-class Index(BaseHandler):
 
+class Index(BaseHandler):
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
@@ -64,10 +65,13 @@ class Index(BaseHandler):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('index.xhtml', message=self.msg, username=self.user, users_count=len(_world.online_who()))
+        self.render('index.xhtml',
+                    message = self.msg,
+                    username = self.user,
+                    users_count = len(_world.online_who())
+                    )
 
 class Registration(BaseHandler):
-
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
@@ -100,10 +104,12 @@ class Registration(BaseHandler):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('register.xhtml', message=self.msg, username=self.user)
+        self.render('register.xhtml',
+                    message = self.msg,
+                    username = self.user
+                    )
 
 class Logout(BaseHandler):
-
     @tornado.web.authenticated
     @tornado.web.asynchronous
     def get(self):
@@ -114,22 +120,23 @@ class Logout(BaseHandler):
         self.redirect('/')
 
 class WhoOnline(BaseHandler):
-    
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('online.xhtml', message=self.msg, users=_world.online_who())
+        self.render('online.xhtml',
+                    message = self.msg,
+                    users = _world.online_who()
+                    )
 
 class About(BaseHandler):
-
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('about.xhtml', message=self.msg)
+        self.render('about.xhtml', message = self.msg)
 
 class Contacts(BaseHandler):
     @tornado.web.asynchronous
@@ -137,28 +144,28 @@ class Contacts(BaseHandler):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('contacts.xhtml', message=self.msg)
+        self.render('contacts.xhtml', message = self.msg)
 
 class Rules(BaseHandler):
-
     @tornado.web.asynchronous
     def get(self):
         self.async_callback(self._on_render())
 
     def _on_render(self):
-        self.render('rules.xhtml', message=self.msg)
+        self.render('rules.xhtml', message = self.msg)
 
 class Profile(BaseHandler):
-
     @tornado.web.asynchronous
     def get(self, username):
         self.async_callback(self._on_render(username))
 
     def _on_render(self, username):
-        self.render('profile.xhtml', message=self.msg, profile=username)
+        self.render('profile.xhtml',
+                    message = self.msg,
+                    profile = username
+                    )
 
 class GameAccounts(BaseHandler):
-
     @tornado.web.authenticated
     @tornado.web.asynchronous
     def get(self):
@@ -189,7 +196,11 @@ class GameAccounts(BaseHandler):
         self.async_callback(self._on_render(acc))
 
     def _on_render(self, accs):
-        self.render('accounts.xhtml', message=self.msg, username=self.user, accounts=accs['accounts'])
+        self.render('accounts.xhtml',
+                    message = self.msg,
+                    username = self.user,
+                    accounts = accs['accounts']
+                    )
 
 class GameAccount(BaseHandler):
     @tornado.web.authenticated
@@ -205,7 +216,11 @@ class GameAccount(BaseHandler):
         _world.online_add(self.get_current_account())
 
     def _on_render(self, accountName):
-        self.render('account.xhtml', message=self.msg, username=self.user, account=accountName)
+        self.render('account.xhtml',
+                    message = self.msg,
+                    username = self.user,
+                    account = accountName
+                    )
 """
 class GameAccountSettings(BaseHandler):
 
@@ -235,9 +250,9 @@ class Game(BaseHandler):
         c_loc = _world.get_loc(loc)['war']
         n_loc = _world.get_loc(new_loc)['war']
         if new_loc in _world.get_loc(loc)['exits']:
-            if (c_loc==2) and (n_loc==1):
+            if (c_loc == 2) and (n_loc == 1):
                 self.msg.append('you in peace territory')
-            elif (c_loc==1) and (n_loc==2):
+            elif (c_loc == 1) and (n_loc == 2):
                 self.msg.append('you in war territory')
             else:
                 pass
@@ -260,13 +275,13 @@ class Game(BaseHandler):
     def get(self):
         self.msg.append(_player.get_param('journal'))
         actions = {
-                  'save': self._on_save,
-                  'profile': self._on_profile,
-                  'logout': self._on_logout,
-                  'sayall': self._on_sayall,
-                  'info': self._on_info,
-                  'select': self.select,
-                  'go': self.go_to,
+                  'save' : self._on_save,
+                  'profile' : self._on_profile,
+                  'logout' : self._on_logout,
+                  'sayall' : self._on_sayall,
+                  'info' : self._on_info,
+                  'select' : self.select,
+                  'go' : self.go_to,
                   }
         action = self.get_argument('action',None)
         if action:
@@ -297,15 +312,30 @@ class Game(BaseHandler):
 
     def _on_actions(self,target):
         current_account = self.get_current_account()
-        if target[:3]=='npc':
-            self.render('actions/npc.xhtml',message=self.msg,player=current_account,target=target)
-        if target[:4]=='item':
-            self.render('actions/item.xhtml',message=self.msg,player=current_account,target=target)
-        if target[:4]=='user':
-            self.render('actions/user.xhtml',message=self.msg,player=current_account,target=target)
+        if target.startswith('npc'):
+            self.render('actions/npc.xhtml',
+                        message = self.msg,
+                        player = current_account,
+                        target = target
+                        )
+        if target.startswith('item'):
+            self.render('actions/item.xhtml',
+                        message = self.msg,
+                        player = current_account,
+                        target = target
+                        )
+        if target.startswith('user'):
+            self.render('actions/user.xhtml',
+                        message = self.msg,
+                        player = current_account,
+                        target = target
+                        )
 
     def _on_sayall(self):
-        self.render('actions/sayall.xhtml',message=self.msg,player=self.get_current_account())
+        self.render('actions/sayall.xhtml',
+                    message = self.msg,
+                    player = self.get_current_account()
+                    )
 
     def _on_save(self):
         _player.save(self.get_current_account())
@@ -342,11 +372,11 @@ class GameServer(tornado.web.Application):
                     #(r'/game/connect/settings/(.*?)', GameAccountSettings),
                     ]
         settings = {
-                    'game_title': 'Insane Dream',
-                    'template_path': os.path.join(os.path.dirname(__file__), "data/templates"),
-                    'static_path': os.path.join(os.path.dirname(__file__), "data/static"),
-                    'cookie_secret': "11oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
-                    'login_url': "/",
+                    'game_title' : 'Insane Dream',
+                    'template_path' : os.path.join(os.path.dirname(__file__), "data/templates"),
+                    'static_path' : os.path.join(os.path.dirname(__file__), "data/static"),
+                    'cookie_secret' : "11oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
+                    'login_url' : "/",
                     }
         tornado.web.Application.__init__(self, handlers, **settings)
 
